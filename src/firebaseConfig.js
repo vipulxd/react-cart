@@ -3,13 +3,13 @@ import "firebase/auth";
 import "firebase/app";
 
 var firebaseConfig = {
-  apiKey: "AIzaSyBcVkphaF8Pprb9pasqzY4EDSKEn76OCDA",
-  authDomain: "react-cart-f7ebd.firebaseapp.com",
-  projectId: "react-cart-f7ebd",
-  storageBucket: "react-cart-f7ebd.appspot.com",
-  messagingSenderId: "394483049495",
-  appId: "1:394483049495:web:56b4f47824feb0db8aa852",
-  measurementId: "G-ZRJCL1NPYY",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
