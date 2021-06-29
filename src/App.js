@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 import Navbar from "./pages/Home Components/Navbar";
 
 
-import Auth from "./pages/Auth";
+// import Auth from "./pages/Auth";
 
 // >>>>>>> 1c5238e0e947784ca6a1f9f74e66f35547ed19c6
 function App() {
@@ -24,9 +24,9 @@ function App() {
         <Route path="/product" exact>
           <Product/>
         </Route> 
-        <Route path="/authentication" exact>
+        {/* <Route path="/authentication" exact>
           <Auth/>
-        </Route> 
+        </Route>  */}
         
 
         
