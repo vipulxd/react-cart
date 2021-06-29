@@ -3,12 +3,19 @@ import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Product from "./pages/Product";
 import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
+<<<<<<< HEAD
 import Navbar from "./pages/Home Components/Navbar";
+=======
+
+import Auth from "./pages/Auth";
+
+>>>>>>> 1c5238e0e947784ca6a1f9f74e66f35547ed19c6
 function App() {
   return (
     <Router>
       <Navbar/>
       <Switch>
+<<<<<<< HEAD
         <Route path="/" exact>
           <Home/>
         </Route> 
@@ -19,6 +26,12 @@ function App() {
           <Product/>
         </Route> 
         
+=======
+        <Route path="/authentication" component={Auth} />
+        <Route path="/" exact component={Home} />
+        <Route path="/product/:prod_id" exact component={Product} />
+        <Route path="/Cart" exact component={Cart} />
+>>>>>>> 1c5238e0e947784ca6a1f9f74e66f35547ed19c6
       </Switch>
     </Router>
 
