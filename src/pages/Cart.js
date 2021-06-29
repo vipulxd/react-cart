@@ -1,7 +1,11 @@
 import React from "react";
-
+import Navbar from "./Home Components/Navbar";
 function Cart() {
-  return <div>cart with stripe js implementation </div>;
+  return(
+    <div>
+     <h1>This is cart page</h1>
+    </div>
+  )
 }
 
 export default Cart;

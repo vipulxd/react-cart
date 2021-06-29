@@ -1,7 +1,11 @@
 import React from "react";
 
 function Product() {
-  return <div>With the product id inside the url</div>;
+  return (
+    <div>
+      <h1>This is product page.</h1>
+    </div>
+  );
 }
 
 export default Product;
