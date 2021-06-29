@@ -1,7 +1,10 @@
 import React, {useState} from "react";
 import firebaseconfig from "../../firebaseConfig";
 import firebase from "firebase";
+import {useHistory} from "react-router-dom";
+import "../../styles/auth.css";
 function Login() {
+  const history = useHistory();
   const [details, setdetails] = useState({
     email: "",
     password: "",
@@ -17,7 +20,7 @@ function Login() {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(userCredential => {
-        console.log(userCredential);
+        history.goBack();
       })
       .catch(error => {
         console.log(error);
@@ -25,15 +28,30 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="auth_outer">
       <div>
-        email:<input type="email" name="email" onChange={handledetails}></input>
+        <div className="outofnames">
+          <div className="outofnames2"> Email</div>
+          <div>
+            {" "}
+            <input type="email" name="email" onChange={handledetails}></input>
+          </div>
+        </div>
       </div>
-      <div>
-        password:
-        <input type="password" name="password" onChange={handledetails}></input>
+      <div className="outofnames">
+        <div className="outofnames2">Password</div>
+        <div>
+          {" "}
+          <input
+            type="password"
+            name="password"
+            onChange={handledetails}
+          ></input>
+        </div>
       </div>
-      <button onClick={signIn}>signIn</button>
+      <div className="outofnames">
+        <button onClick={signIn}>Login</button>
+      </div>
     </div>
   );
 }

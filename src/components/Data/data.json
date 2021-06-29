@@ -1,0 +1,13 @@
+[
+	
+	{"id":0,"prod_name":"Sofa","price":2000,"imagerurl":"static/0.jpg"},
+	{"id":1,"prod_name":"Table","price":2000,"imagerurl":"static/0.jpg"},
+	{"id":2,"prod_name":"Matrice 4/1","price":2000,"imagerurl":"static/0.jpg"},
+	{"id":3,"prod_name":"Ping-Pong table","price":2000,"imagerurl":"static/0.jpg"},
+	{"id":4,"prod_name":"Dining table","price":2000,"imagerurl":"static/0.jpg"},
+	{"id":5,"prod_name":"Bucket","price":2000,"imagerurl":"static/0.jpg"},
+	{"id":6,"prod_name":"Tv Stand","price":2000,"imagerurl":"static/0.jpg"}
+	
+
+
+]

@@ -1,9 +1,12 @@
 import React from "react";
-
+import {useParams} from "react-router-dom";
+import "../styles/product.css";
 function Product() {
+  const {id} = useParams();
+
   return (
-    <div>
-      <h1>This is product page.</h1>
+    <div className="outofnameswow">
+      <div className="product_outer"></div>
     </div>
   );
 }

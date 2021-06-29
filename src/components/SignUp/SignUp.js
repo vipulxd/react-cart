@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import firebaseconfig from "../../firebaseConfig";
 import firebase from "firebase";
-
+import "../../styles/auth.css";
 function SignUp() {
   const [details, setdetails] = useState({
     email: "",
@@ -26,15 +26,30 @@ function SignUp() {
       });
   };
   return (
-    <div>
+    <div className="auth_outer">
       <div>
-        email:<input type="email" name="email" onChange={handledetails}></input>
+        <div className="outofnames">
+          <div className="outofnames2"> Email</div>
+          <div>
+            {" "}
+            <input type="email" name="email" onChange={handledetails}></input>
+          </div>
+        </div>
       </div>
-      <div>
-        password:
-        <input type="password" name="password" onChange={handledetails}></input>
+      <div className="outofnames">
+        <div className="outofnames2">Password</div>
+        <div>
+          {" "}
+          <input
+            type="password"
+            name="password"
+            onChange={handledetails}
+          ></input>
+        </div>
       </div>
-      <button onClick={signup}>signUp</button>
+      <div className="outofnames">
+        <button onClick={signup}>Signup</button>
+      </div>
     </div>
   );
 }

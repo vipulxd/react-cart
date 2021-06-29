@@ -5,38 +5,33 @@ import Product from "./pages/Product";
 import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 import Navbar from "./pages/Home Components/Navbar";
 
-
-// import Auth from "./pages/Auth";
+import Auth from "./pages/Auth";
 
 // >>>>>>> 1c5238e0e947784ca6a1f9f74e66f35547ed19c6
 function App() {
   return (
     <Router>
-      <Navbar/>
+      <Navbar />
       <Switch>
-
         <Route path="/" exact>
-          <Home/>
-        </Route> 
+          <Home />
+        </Route>
         <Route path="/cart" exact>
-          <Cart/>
-        </Route> 
-        <Route path="/product" exact>
-          <Product/>
-        </Route> 
-        {/* <Route path="/authentication" exact>
-          <Auth/>
-        </Route>  */}
-        
+          <Cart />
+        </Route>
+        <Route path="/product/:id" exact>
+          <Product />
+        </Route>
+        <Route path="/authentication" exact>
+          <Auth />
+        </Route>
 
-        
         {/* <Route path="/" exact component={Home} />
         <Route path="/product/:prod_id" exact component={Product} />
         <Route path="/Cart" exact component={Cart} /> */}
-{/* >>>>>>> 1c5238e0e947784ca6a1f9f74e66f35547ed19c6 */}
+        {/* >>>>>>> 1c5238e0e947784ca6a1f9f74e66f35547ed19c6 */}
       </Switch>
     </Router>
-
   );
 }
 

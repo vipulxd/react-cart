@@ -1,0 +1,40 @@
+.homeouter {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+
+  width: 100%;
+  text-align: center;
+  grid-gap: 30px;
+  margin: 10%;
+}
+.homeouter2 {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  padding: 20px;
+  color: black;
+}
+.homeouter12 {
+  text-decoration: none;
+}
+.homeouter12 img {
+  width: 120px;
+}
+.homeouter123 {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 900;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.cardbutton {
+  height: 30px;
+  width: 100px;
+  background-color: #06163d;
+  border: none;
+  margin: 0px 30px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+}
