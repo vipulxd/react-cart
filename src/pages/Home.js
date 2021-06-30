@@ -1,9 +1,9 @@
 import React from "react";
-
+import ProductsComponent from "./Home Components/ProductsComponent";
 function Home() {
   return(
     <div>
-      <h1>This is Home</h1>
+      <ProductsComponent />
     </div>
   );
 }

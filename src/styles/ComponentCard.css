@@ -1,0 +1,43 @@
+/* primary color : #06163d */
+/* secondary color : #5e1a01 */
+/* font-family: 'Merriweather Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Monoton&display=swap');
+.componentcard{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    width: 322px;
+    cursor: pointer;
+    border: 1px solid rgb(163, 159, 159);
+    border-radius: 5px;
+}
+.componentcard-image{
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.componentcard-name{
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 10px;
+}
+.componentcard-tagline{
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 10px;
+}
+.componentcard-rating{
+    position: absolute;
+    padding-top: 10px;
+    color: #06163d;
+}
+.componentcard-price{
+    font-family: 'Merriweather Sans', sans-serif;
+    /* text-align: right; */
+    color: #fff;
+    padding: 5px;
+    background-color:#06163d ;
+    position: relative;
+    left: 210px;
+    max-width: 75px;
+    border-radius: 10px;
+}
