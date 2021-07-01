@@ -4,7 +4,9 @@ import "../../styles/navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <h2 className="navbar-logo">React Cart</h2>
+      <Link to="/">
+        <h2 className="navbar-logo">React Cart</h2>
+      </Link>
       <ul className="navbar-links">
         <Link to="/" className="home">
           <li className="link-li">

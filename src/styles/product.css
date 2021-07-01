@@ -1,9 +1,38 @@
-.product_outer {
-  min-height: 300px;
-  background-color: rgba(128, 128, 128, 0.459);
-  margin: 0 auto;
-  width: 70%;
-}
 .outofnameswow {
   margin-top: 20px;
+}
+.product_outer {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  grid-template-rows: repeat(6, 70px);
+  grid-gap: 20px;
+  height: 100%;
+}
+.img {
+  grid-row: span 4;
+}
+.img img {
+  border-radius: 10px;
+}
+
+.prod_button {
+  display: flex;
+  justify-content: space-evenly;
+}
+.prod-bt button {
+  width: 100px;
+  padding: 5px;
+  background-color: #06163d;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.tagline {
+  font-style: italic;
 }
