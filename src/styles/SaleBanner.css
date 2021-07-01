@@ -1,0 +1,29 @@
+.salebanner{
+    margin: 20px;
+    cursor: pointer;
+}
+.salebanner-image{
+    width: 100%;
+    height: 580px;
+}
+.salebanner-head{
+    position: relative;
+    max-width: 350px;
+    left: 30px;
+    bottom: 450px;
+    font-size: 78px;
+    color: aliceblue;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.salebanner-button{
+    position: relative;
+    left: 120px;
+    bottom: 425px;
+    font-size: 20px;
+    background-color: black;
+    color: aliceblue;
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+}

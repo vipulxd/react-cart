@@ -1,0 +1,19 @@
+[
+	
+	{"id":0,"prod_name":"iWatch 2022","price":599,"imageurl":"static/black watch.jpg","tagline":"Latest unisex black watch for teenagers."},	
+	{"id":1,"prod_name":"Designer Sofa","price":249,"imageurl":"static/0.jpg","tagline":"Sofa that suits your home and comforts you."},
+	{"id":2,"prod_name":"Swagger Bullet","price":2999,"imageurl":"static/bullt.jpg","tagline":"Update your Swaggg."},
+	{"id":3,"prod_name":"Formals for Her","price":399,"imageurl":"static/lady formals.jpg","tagline":"Being boss also depends on what you ever"},
+	{"id":4,"prod_name":"Benz 2050","price":9999,"imageurl":"static/luxury car.jpg","tagline":"There's no limit to speed when you are in Benz"},
+	{"id":5,"prod_name":"Gift Set for Him","price":599,"imageurl":"static/male gift set.jpg","tagline":"It'll surely make him blush."},
+	{"id":6,"prod_name":"Ramsung S5","price":349,"imageurl":"static/ramsung s5.jpg","tagline":"World that fits in your pocket."},
+	{"id":7,"prod_name":"Unisex White Sneakers","price":199,"imageurl":"static/white sneakers.jpg","tagline":"What your wear on feet depicts your personality."},
+	{"id":8,"prod_name":"Trendy for Her","price":299,"imageurl":"static/women set.jpg","tagline":"Best She Products..."},
+	{"id":9,"prod_name":"Metal Chair","price":149,"imageurl":"static/chair.jpg","tagline":"Black multipurpose solid metalli chair."},
+	{"id":10,"prod_name":"Yoga Mat","price":99,"imageurl":"static/yoga mat.jpg","tagline":"Flexible yoga mat for a flexible version of you."},
+	{"id":11,"prod_name":"MZN Office Laptop","price":899,"imageurl":"static/laptop.jpg","tagline":"Latest i9 office series."},
+	{"id":12,"prod_name":"Vintage Camera","price":599,"imageurl":"static/camera.jpg","tagline":"Flash up you childhood memories."},
+	{"id":13,"prod_name":"Golf Ball","price":79,"imageurl":"static/golf ball.jpg","tagline":"Solid golf ball."},
+	{"id":14,"prod_name":"Yellow Vase","price":119,"imageurl":"static/yellow vase.jpg","tagline":"Freshen up your home wuth this lucky yellow vase."}
+	
+]
