@@ -1,5 +1,5 @@
 .outofnameswow {
-  margin-top: 20px;
+  margin-top: 100px;
 }
 .product_outer {
   font-family: "Merriweather Sans", sans-serif;
@@ -11,6 +11,7 @@
   grid-template-rows: repeat(6, 70px);
   grid-gap: 20px;
   height: 100%;
+  background-color: white;
 }
 .img {
   grid-row: span 4;
@@ -21,9 +22,11 @@
 
 .prod_button {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .prod-bt button {
+  font-size: 1rem;
+  height: 100%;
   width: 100px;
   padding: 5px;
   background-color: #06163d;
