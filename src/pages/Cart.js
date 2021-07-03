@@ -1,11 +1,37 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Navbar from "./Home Components/Navbar";
+import {useSelector} from "react-redux";
 function Cart() {
-  return(
+  const [cartprods, setcartprods] = useState();
+  const items = useSelector(state => state.productsincart);
+
+  useEffect(() => {
+    if (items.length > 0) {
+      setcartprods(items);
+    } else {
+      function defaultdisplay() {
+        return <h1>add something</h1>;
+      }
+    }
+  }, []);
+  return (
     <div>
-     <h1>This is cart page</h1>
+      {cartprods ? (
+        <div>
+          {cartprods.map(item => {
+            return (
+              <div>
+                <h3>{item.prod_name}</h3>
+                <h4>{item.price}</h4>
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <h1>Cart is empty</h1>
+      )}
     </div>
-  )
+  );
 }
 
 export default Cart;

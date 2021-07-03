@@ -3,10 +3,17 @@ import {useParams} from "react-router-dom";
 import "../styles/product.css";
 import data from "../components/Data/data.json";
 import PaymentComponent from "../components/PaymentComponent/PaymentComponent";
+import {useDispatch, useSelector} from "react-redux";
+import {addprod} from "../redux";
 function Product() {
+  const dispatch = useDispatch();
   const {id} = useParams();
   const [details, setdetails] = useState({});
-  console.log(details);
+
+  function handleCart(id) {
+    console.log("clicked");
+    dispatch(addprod(id));
+  }
   useEffect(() => {
     const item = data.find(item => item.id == id);
     setdetails(item);
@@ -39,7 +46,7 @@ function Product() {
               </button>
             </div>
             <div className="prod-bt">
-              <button>Add to cart</button>
+              <button onClick={() => handleCart(details)}>Add to cart</button>
             </div>
           </div>
         </div>
