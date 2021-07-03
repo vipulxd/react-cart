@@ -1,17 +1,18 @@
 import React, {useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
+import {useHistory, useParams} from "react-router-dom";
 import "../styles/product.css";
 import data from "../components/Data/data.json";
 import PaymentComponent from "../components/PaymentComponent/PaymentComponent";
 import {useDispatch, useSelector} from "react-redux";
 import {addprod} from "../redux";
 function Product() {
+  const history = useHistory();
   const dispatch = useDispatch();
   const {id} = useParams();
   const [details, setdetails] = useState({});
+  const user = localStorage.getItem("user");
 
   function handleCart(id) {
-    console.log("clicked");
     dispatch(addprod(id));
   }
   useEffect(() => {
@@ -40,9 +41,15 @@ function Product() {
           <div className="prod_button">
             <div className="prod-bt">
               <button>
-                <PaymentComponent details />
-                {/* this is the key add this in .env  
-                "pk_test_51IyivBSBevftQuaAIhrFBQ1b90xAYfqVkysZyDXshrS6vG7I8lAxJgQw7zVgaxexgNLbnXTDTyQjEiJXweZXRTIq00eBPB3M1M" */}
+                {!user ? (
+                  <p onClick={() => history.push("/authentication")}>
+                    Login to buy
+                  </p>
+                ) : (
+                  <p>
+                    <PaymentComponent details />
+                  </p>
+                )}{" "}
               </button>
             </div>
             <div className="prod-bt">

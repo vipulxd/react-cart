@@ -3,7 +3,7 @@ import "../../styles/ComponentCard.css";
 import {Link} from "react-router-dom";
 const ComponentCard = props => {
   return (
-    <div className="componentcard">
+    <div style={{borderRadius: "5px"}} className="componentcard">
       <Link to={"/product/" + props.id}>
         <img className="componentcard-image" src={props.image} alt="watch" />
       </Link>
