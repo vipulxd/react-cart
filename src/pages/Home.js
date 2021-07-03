@@ -1,5 +1,5 @@
 import React from "react";
-
+import Slider from "./Home Components/Slider";
 import ProductsComponent from "./Home Components/ProductsComponent";
 import SaleBanner from "./Home Components/SaleBanner";
 function Home() {
@@ -7,6 +7,7 @@ function Home() {
     <div>
       <ProductsComponent />
       <SaleBanner />
+      <Slider />
 
 {/* //  import data from "../components/Data/data.json";
 // import "../styles/home.css";
