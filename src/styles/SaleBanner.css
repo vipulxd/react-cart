@@ -1,6 +1,8 @@
 .salebanner{
     margin: 20px;
     cursor: pointer;
+    margin-bottom: 0;
+    max-height: 600px;
 }
 .salebanner-image{
     width: 100%;
