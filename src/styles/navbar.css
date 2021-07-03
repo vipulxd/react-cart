@@ -2,56 +2,56 @@
 /* secondary color : #5e1a01 */
 /* font-family: 'Merriweather Sans', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Monoton&display=swap');
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Monoton&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    margin: 0px 20px;
-    background-color:  #06163d;
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 20px;
+  background-color: #06163d;
 }
-.navbar-logo{
-    border: none;
-    margin: 0px 20px;
-    padding:0px 20px;
-    font-size: 2.5em;
-    font-family: 'Monoton', cursive;
-    color:  aliceblue;
-    font-weight: 400;
-    cursor: pointer;
+.navbar-logo {
+  border: none;
+  margin: 0px 20px;
+  padding: 0px 20px;
+  font-size: 2.5em;
+  font-family: "Monoton", cursive;
+  color: aliceblue;
+  font-weight: 400;
+  cursor: pointer;
 }
-.navbar-links{
-    justify-self: right;
-    margin: 10px;
+.navbar-links {
+  justify-self: right;
+  margin: 10px;
 }
-.navbar-links li{
-    display: inline-block;
-    margin: 0px 20px;
-    font-size: 1.2em;
-    font-family: 'Merriweather Sans', sans-serif;
-    color: aliceblue;
+.navbar-links li {
+  display: inline-block;
+  margin: 0px 20px;
+  font-size: 1.2em;
+  font-family: "Merriweather Sans", sans-serif;
+  color: aliceblue;
 }
-.fa-solid{
-    color: aliceblue;
+.fa-solid {
+  color: aliceblue;
 }
-.link-li{
-   padding : 10px;
+.link-li {
+  padding: 10px;
 }
 
 .link-li:after {
-    display:block;
-    content: '';
-    border-top: 3px solid aliceblue;  
-    transform: scaleX(0);  
-    transition: transform 600ms ease-in-out
+  display: block;
+  content: "";
+  border-top: 3px solid aliceblue;
+  transform: scaleX(0);
+  transition: transform 600ms ease-in-out;
 }
-.link-li:hover:after { 
-    transform: scaleX(1); 
+.link-li:hover:after {
+  transform: scaleX(1);
 }
