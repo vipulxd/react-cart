@@ -17,6 +17,7 @@
     width: 300px;
 }
 .slider-button{
+    cursor: pointer;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 16px;
     width: 30%;
